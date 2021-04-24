@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/FirstApp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/FirstApp2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LabPKAU/lab-1-java-app-Mateusz-Gorniak" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LabPKAU/lab-3-java-app-cd-Mateusz-Gorniak" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LabPKAU/lab-4-matlab-app-Mateusz-Gorniak" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/PAI_1" vcs="Git" />
+  </component>
+</project>

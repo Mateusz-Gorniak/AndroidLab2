@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Witaj"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/book_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/twotone_book_green_a700_48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@id/hello"
+        app:layout_constraintTop_toBottomOf="@id/hello"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/book_icon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/twotone_bookmarks_green_a700_48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@id/hello"
+        app:layout_constraintTop_toBottomOf="@id/book_icon"
+        tools:ignore="MissingConstraints,UnknownId" />
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:text="1. Czytaj książki"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/book_icon"
+        app:layout_constraintLeft_toLeftOf="@id/book_icon"
+        app:layout_constraintTop_toTopOf="@id/book_icon"
+        app:layout_constraintVertical_bias="0.5"
+
+        />
+
+    <TextView
+        android:id="@+id/read_books"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:text="2. Zostaw komentarz"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/book_icon1"
+        app:layout_constraintLeft_toLeftOf="@id/book_icon1"
+        app:layout_constraintTop_toTopOf="@id/book_icon1"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK, DALEJ!"
+        app:layout_constraintTop_toBottomOf="@id/hello"
+        android:layout_marginTop="150dp"
+        app:layout_constraintRight_toRightOf="@id/hello"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:backgroundTint="@color/gray"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
