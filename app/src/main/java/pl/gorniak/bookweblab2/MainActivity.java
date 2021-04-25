@@ -35,4 +35,9 @@ public class MainActivity extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
+
+    public void next_button(View view) {
+        Intent menupage = new Intent(MainActivity.this,HomeActivity.class);
+        startActivity(menupage);
+    }
 }

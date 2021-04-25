@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_bookweb">
+
+
+    <fragment
+        android:id="@+id/nav_bookweb"
+        android:name="pl.gorniak.bookweblab2.ui.home.HomeFragment"
+        android:label="@string/menu_bookweb"
+        tools:layout="@layout/fragment_bookweb"
+        />
+
+    <fragment
+        android:id="@+id/nav_math"
+        android:name="pl.gorniak.bookweblab2.ui.gallery.GalleryFragment"
+        android:label="@string/menu_math"
+        tools:layout="@layout/fragment_math" />
+
+    <fragment
+        android:id="@+id/nav_inf"
+        android:name="pl.gorniak.bookweblab2.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_inf"
+        tools:layout="@layout/fragment_inf" />
+
+    <fragment
+        android:id="@+id/nav_electronics"
+        android:name="pl.gorniak.bookweblab2.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_electronics"
+        tools:layout="@layout/fragment_electronics" />
+
+</navigation>
