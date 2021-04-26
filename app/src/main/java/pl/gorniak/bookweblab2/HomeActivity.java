@@ -19,6 +19,7 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.appcompat.app.ActionBar;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -49,6 +50,7 @@ public class HomeActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+        Warehouse.setToolbarTile(getSupportActionBar(), "Strona Główna");
     }
 
     @Override
@@ -56,6 +58,35 @@ public class HomeActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.home, menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.info:
+                Intent infopage = new Intent(HomeActivity.this,AboutProgramActivity.class);
+                startActivity(infopage);
+                return true;
+            case R.id.action_settings:
+                Toast.makeText(HomeActivity.this, "IKONA KAMERA", Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.action_something:
+                /*Create an ACTION_SEND Intent*/
+                Intent intent = new Intent(android.content.Intent.ACTION_SEND);
+                /*This will be the actual content you wish you share.*/
+                String shareBody = "Here is the share content body";
+                /*The type of the content is text, obviously.*/
+                intent.setType("text/plain");
+                /*Applying information Subject and Body.*/
+                //intent.putExtra(android.content.Intent.EXTRA_SUBJECT, getString(R.string.share_subject));
+                intent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
+                /*Fire!*/
+                startActivity(Intent.createChooser(intent,"Udostępnienie informacji o aplikacji"));
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 
     @Override
@@ -80,5 +111,6 @@ public class HomeActivity extends AppCompatActivity {
     public void ElectronicsClick(MenuItem item) {
         Toast.makeText(HomeActivity.this, "Elektronika", Toast.LENGTH_SHORT).show();
     }
+
 
 }

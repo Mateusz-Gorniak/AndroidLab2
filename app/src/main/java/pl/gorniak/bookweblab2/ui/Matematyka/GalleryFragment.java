@@ -1,4 +1,4 @@
-package pl.gorniak.bookweblab2.ui.gallery;
+package pl.gorniak.bookweblab2.ui.Matematyka;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

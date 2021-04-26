@@ -8,26 +8,26 @@
 
     <fragment
         android:id="@+id/nav_bookweb"
-        android:name="pl.gorniak.bookweblab2.ui.home.HomeFragment"
+        android:name="pl.gorniak.bookweblab2.ui.Bookweb.HomeFragment"
         android:label="@string/menu_bookweb"
         tools:layout="@layout/fragment_bookweb"
         />
 
     <fragment
         android:id="@+id/nav_math"
-        android:name="pl.gorniak.bookweblab2.ui.gallery.GalleryFragment"
+        android:name="pl.gorniak.bookweblab2.ui.Matematyka.GalleryFragment"
         android:label="@string/menu_math"
         tools:layout="@layout/fragment_math" />
 
     <fragment
         android:id="@+id/nav_inf"
-        android:name="pl.gorniak.bookweblab2.ui.slideshow.SlideshowFragment"
+        android:name="pl.gorniak.bookweblab2.ui.Informatyka.SlideshowFragment"
         android:label="@string/menu_inf"
         tools:layout="@layout/fragment_inf" />
 
     <fragment
         android:id="@+id/nav_electronics"
-        android:name="pl.gorniak.bookweblab2.ui.slideshow.SlideshowFragment"
+        android:name="pl.gorniak.bookweblab2.ui.Informatyka.SlideshowFragment"
         android:label="@string/menu_electronics"
         tools:layout="@layout/fragment_electronics" />
 

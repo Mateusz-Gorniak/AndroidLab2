@@ -8,14 +8,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.BookWebLab2">
+        android:theme="@style/Theme.BookWebLab2"
+        >
         <activity
             android:name=".HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/Theme.BookWebLab2.NoActionBar" />
+            android:theme="@style/Theme.BookWebLab2.NoActionBar"
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".MainActivity"
-            android:label="Book Master">
+            android:label="Book Master"
+            android:screenOrientation="portrait"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,7 +29,8 @@
         </activity>
         <activity
             android:name=".AboutProgramActivity"
-            android:label="O Programie" />
+            android:label="O Programie"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
