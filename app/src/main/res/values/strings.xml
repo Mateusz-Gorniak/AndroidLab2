@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BookWebLab2</string>
+    <string name="app_name">BookWeb</string>
     <string name="title_activity_home">Strona Główna</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

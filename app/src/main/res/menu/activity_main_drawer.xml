@@ -7,20 +7,20 @@
         <item
             android:id="@+id/nav_bookweb"
             android:title="BookWeb"
-            android:onClick="BookWebClick"
+            android:onClick="bookWebClick"
             />
         <item
             android:id="@+id/nav_math"
             android:title="Matematyka"
-            android:onClick="MathClick"/>
+            android:onClick="mathClick"/>
         <item
             android:id="@+id/nav_inf"
             android:title="Informatyka"
-            android:onClick="InfClick"/>
+            android:onClick="infClick"/>
         <item
             android:id="@+id/nav_electronics"
             android:title="Elektronika"
-            android:onClick="ElectronicsClick"/>
+            android:onClick="electronicsClick"/>
 
     </group>
 </menu>

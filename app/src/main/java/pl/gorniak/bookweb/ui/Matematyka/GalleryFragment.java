@@ -1,4 +1,4 @@
-package pl.gorniak.bookweblab2.ui.Matematyka;
+package pl.gorniak.bookweb.ui.Matematyka;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import pl.gorniak.bookweblab2.R;
+import pl.gorniak.bookweb.R;
 
 public class GalleryFragment extends Fragment {
 

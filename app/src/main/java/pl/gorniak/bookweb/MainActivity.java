@@ -1,4 +1,4 @@
-package pl.gorniak.bookweblab2;
+package pl.gorniak.bookweb;
 
 import androidx.appcompat.app.AppCompatActivity;
 

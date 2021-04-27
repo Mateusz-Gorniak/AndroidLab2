@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
 
     <TextView
         android:id="@+id/hello"
@@ -17,68 +18,75 @@
         android:textStyle="bold"
         tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/book_icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:src="@drawable/twotone_book_green_900_48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="@id/hello"
-        app:layout_constraintTop_toBottomOf="@id/hello"
-        tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/book_icon1"
-        android:layout_width="wrap_content"
+    <androidx.cardview.widget.CardView
+        style="@style/CardView2"
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:src="@drawable/twotone_bookmark_green_900_48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintStart_toStartOf="@id/hello"
-        app:layout_constraintTop_toBottomOf="@id/book_icon"
-        tools:ignore="MissingConstraints,UnknownId" />
+        android:layout_below="@id/hello"
+        >
 
-    <TextView
-        android:id="@+id/comment"
-        android:layout_width="wrap_content"
+        <ImageView
+            android:id="@+id/book_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/twotone_book_green_900_48dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="start|center"
+            android:text="1. Czytaj książki"
+            android:textStyle="bold" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        style="@style/CardView2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:text="1. Czytaj książki"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/book_icon"
-        app:layout_constraintLeft_toLeftOf="@id/book_icon"
-        app:layout_constraintTop_toTopOf="@id/book_icon"
-        app:layout_constraintVertical_bias="0.5"
+        android:layout_below="@id/card1"
+        tools:ignore="MissingConstraints">
 
-        />
+        <TextView
+            android:id="@+id/read_books"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:layout_marginLeft="60dp"
+            android:text="2. Zostaw komentarz"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/read_books"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:text="2. Zostaw komentarz"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@id/book_icon1"
-        app:layout_constraintLeft_toLeftOf="@id/book_icon1"
-        app:layout_constraintTop_toTopOf="@id/book_icon1"
-        app:layout_constraintVertical_bias="0.5" />
+        <ImageView
+            android:id="@+id/book_icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/twotone_bookmark_green_900_48dp"
+            tools:ignore="MissingConstraints,UnknownId" />
+    </androidx.cardview.widget.CardView>
 
     <Button
         android:id="@+id/next_button"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="OK, DALEJ!"
-        android:layout_marginTop="150dp"
-        app:layout_constraintRight_toRightOf="@id/hello"
-        app:layout_constraintTop_toBottomOf="@id/hello"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="354dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="204dp"
         android:backgroundTint="@color/gray"
         android:onClick="next_button"
-        />
+        android:text="OK, DALEJ!" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

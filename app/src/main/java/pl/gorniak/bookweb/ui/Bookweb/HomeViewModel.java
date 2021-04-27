@@ -1,16 +1,16 @@
-package pl.gorniak.bookweblab2.ui.Elektronika;
+package pl.gorniak.bookweb.ui.Bookweb;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ElektronikaViewModel extends ViewModel {
+public class HomeViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public  ElektronikaViewModel() {
+    public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is Elektronika fragment");
+        mText.setValue("This is home fragment");
     }
 
     public LiveData<String> getText() {

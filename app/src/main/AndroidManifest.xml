@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="pl.gorniak.bookweblab2">
+    package="pl.gorniak.bookweb">
 
     <application
         android:allowBackup="true"
@@ -11,13 +11,13 @@
         android:theme="@style/Theme.BookWebLab2"
         >
         <activity
-            android:name=".HomeActivity"
+            android:name="pl.gorniak.bookweb.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/Theme.BookWebLab2.NoActionBar"
             android:screenOrientation="portrait"
             />
         <activity
-            android:name=".MainActivity"
+            android:name="pl.gorniak.bookweb.MainActivity"
             android:label="Book Master"
             android:screenOrientation="portrait"
             >
@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AboutProgramActivity"
+            android:name="pl.gorniak.bookweb.AboutProgramActivity"
             android:label="O Programie"
             android:screenOrientation="portrait" />
     </application>

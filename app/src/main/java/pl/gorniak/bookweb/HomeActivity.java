@@ -1,4 +1,4 @@
-package pl.gorniak.bookweblab2;
+package pl.gorniak.bookweb;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -93,21 +93,20 @@ public class HomeActivity extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
-    public void BookWebClick(MenuItem item) {
+    public void bookWebClick(MenuItem item) {
         Toast.makeText(HomeActivity.this, "BookWeb", Toast.LENGTH_SHORT).show();
     }
 
-    public void MathClick(MenuItem item) {
+    public void mathClick(MenuItem item) {
         Toast.makeText(HomeActivity.this, "Matematyka", Toast.LENGTH_SHORT).show();
     }
 
-    public void InfClick(MenuItem item) {
+    public void infClick(MenuItem item) {
         Toast.makeText(HomeActivity.this, "Informatyka", Toast.LENGTH_SHORT).show();
     }
 
-    public void ElectronicsClick(MenuItem item) {
+    public void electronicsClick(MenuItem item) {
         Toast.makeText(HomeActivity.this, "Elektronika", Toast.LENGTH_SHORT).show();
     }
-
 
 }
