@@ -1,4 +1,4 @@
-package pl.gorniak.bookweblab2.ui.Informatyka;
+package pl.gorniak.bookweblab2.ui.Elektronika;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,18 +13,19 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import pl.gorniak.bookweblab2.R;
+import pl.gorniak.bookweblab2.ui.Informatyka.SlideshowViewModel;
 
-public class SlideshowFragment extends Fragment {
+public class ElektronikaFragment extends Fragment {
 
-    private SlideshowViewModel slideshowViewModel;
+    private ElektronikaViewModel elektronikaViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        slideshowViewModel =
-                new ViewModelProvider(this).get(SlideshowViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_inf, container, false);
-        final TextView textView = root.findViewById(R.id.text_inf);
-        slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        elektronikaViewModel =
+                new ViewModelProvider(this).get(ElektronikaViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_electronics, container, false);
+        final TextView textView = root.findViewById(R.id.text_electronics);
+        elektronikaViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

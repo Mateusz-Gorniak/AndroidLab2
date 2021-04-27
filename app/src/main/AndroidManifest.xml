@@ -27,10 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".AboutProgramActivity"
-            android:label="O Programie"
-            android:screenOrientation="portrait" />
+       a
     </application>
 
 </manifest>

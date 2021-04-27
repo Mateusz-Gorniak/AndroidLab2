@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <ImageView
         android:id="@+id/book_ico_about_layout"
         android:layout_width="match_parent"
@@ -13,8 +14,9 @@
         android:src="@drawable/baseline_book_green_900_48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38"
-        />
+        app:layout_constraintVertical_bias="0.228"
+        tools:layout_editor_absoluteX="16dp" />
+
     <TextView
         android:id="@+id/book_master_text"
         android:layout_width="match_parent"
@@ -49,26 +51,37 @@
         android:textSize="15sp"
         />
 
-
-    <TextView
-        android:id="@+id/text_authors"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Autorzy:"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="15dp"
-        app:layout_constraintTop_toBottomOf="@id/text_version"
-        android:textSize="15sp"
-        />
+        android:layout_gravity="center"
+        android:layout_marginTop="348dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
 
-    <TextView
-        android:id="@+id/text_authors1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Mateusz Górniak"
-        android:layout_marginLeft="15dp"
-        app:layout_constraintTop_toBottomOf="@id/text_authors"
-        android:textSize="15sp"
-        />
+        <TextView
+            android:id="@+id/text_authors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:text="Autorzy:"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/text_version" />
 
+        <TextView
+            android:id="@+id/text_authors1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Mateusz Górniak"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/text_authors" />
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
