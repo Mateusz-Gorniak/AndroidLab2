@@ -31,4 +31,9 @@
         android:label="@string/menu_electronics"
         tools:layout="@layout/fragment_electronics" />
 
+    <fragment
+        android:id="@+id/nav_booklist"
+        android:label="@string/menu_booklist"
+        tools:layout="@layout/fragment_booklist" />
+
 </navigation>

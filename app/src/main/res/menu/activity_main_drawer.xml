@@ -21,6 +21,9 @@
             android:id="@+id/nav_electronics"
             android:title="Elektronika"
             android:onClick="electronicsClick"/>
+        <item
+            android:id="@+id/nav_booklist"
+            android:title="Lista książek"/>
 
     </group>
 </menu>
